@@ -19,6 +19,19 @@ export const Hero = () => {
                 }} />
             ))}
             </div>
+
+            {/* Content */}
+            <div>
+                <div>
+                    {/* Left Column - Text content */}
+                    <div>
+                        <div>
+                            <span>MERN Stack Developer</span>
+                        </div>
+                    </div>
+                    {/* Right Column - Image content */}
+                </div>
+            </div>
         </section>
     )
 }

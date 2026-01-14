@@ -1,3 +1,6 @@
+import { Button } from "@/components/Button"
+import { ArrowRight } from "lucide-react"
+import { AnimatedBorderButton } from "../components/AnimatedBorderButton"
 export const Hero = () => {
     return (
         <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -21,13 +24,51 @@ export const Hero = () => {
             </div>
 
             {/* Content */}
-            <div>
-                <div>
+            <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
+                <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Left Column - Text content */}
-                    <div>
-                        <div>
-                            <span>MERN Stack Developer</span>
+                    <div className="space-y-8">
+                        <div className="animate-fade-in">
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
+                            <span className="w-2 h-2 bg-primary rounded-full animate-pulse " />Web Development - MERN Stack
+                            </span>
                         </div>
+                    
+
+                    {/* Headline */}
+                    <div className="space-y-4">
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-snug animate-fade-in animation-delay-100">
+  Full Stack{" "}
+  <span className="text-primary glow-text">
+    Web Developer
+  </span>
+  <br />
+  solving problems
+  <br />
+  <span className="font-serif italic font-normal text-white/90">
+    effectively.
+  </span>
+</h1>
+
+
+                        <p className="text-base md:text-lg text-muted-foreground max-w-lg animate-fade-in">
+  Hi, I'm Yash Vimal — a Backend, Frontend, and Python Developer. I build
+  robust backend systems and scalable full stack applications to solve
+  real-world problems.
+</p>
+
+                    </div>
+
+                    {/* CTAs */}
+                    <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
+                        <Button size="lg">
+  <span className="flex items-center gap-2 whitespace-nowrap">
+    Contact Me
+    <ArrowRight className="w-4 h-4 shrink-0" />
+  </span>
+</Button>
+                        <AnimatedBorderButton />
+                    </div>
                     </div>
                     {/* Right Column - Image content */}
                 </div>

@@ -1,6 +1,7 @@
 import { Button } from "@/components/Button"
 import { ArrowRight } from "lucide-react"
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton"
+import { Github, Linkedin } from "lucide-react"
 export const Hero = () => {
     return (
         <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -68,6 +69,20 @@ export const Hero = () => {
   </span>
 </Button>
                         <AnimatedBorderButton />
+                    </div>
+
+                    {/* Social Links */}
+                    <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
+                        <span className="text-sm text-muted-foreground">Follow: </span>
+                        {
+                            [
+                                {icon: Github, href: "https://github.com/yashvimal34?tab=overview&from=2026-01-01&to=2026-01-15"},
+                                {icon: Linkedin, href: "https://www.linkedin.com/in/yash-vimal-08a978285/"},
+                            ].map((social, idx) => (
+                                <a key={idx} href={social.href} className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300">
+                                    {<social.icon className="w-4 h-4" />}</a>
+                            ))
+                        }
                     </div>
                     </div>
                     {/* Right Column - Image content */}

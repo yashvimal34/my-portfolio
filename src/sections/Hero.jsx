@@ -86,6 +86,14 @@ export const Hero = () => {
                     </div>
                     </div>
                     {/* Right Column - Image content */}
+                    <div className="relative animate-fade-in animation-delay-300">
+                        {/* Profile image */}
+                        <div className="relative max-w-md mx-auto">
+                            <div className="relative glass rounded-3xl p-2 glow-border">
+                        <img src="/yash.jpeg" alt="Yash Vimal" className="w-full aspect-[4/5] object-cover rounded-2xl" />
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

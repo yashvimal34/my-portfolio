@@ -23,11 +23,16 @@ export const AnimatedBorderButton = () => {
                                         className="animated-border-path"
                                         />
                                 </svg>
+
+                                <a href="Yash Vimal pdf.pdf"
+                                className="inline-block" 
+                                >
                                 <span className="relative z-10 flex items-center justify-center gap-2">
                                     <Download className="w-4 h-4" />
 
                                     Download CV
                                 </span>
+                                </a>
                         </button>
     );
     };

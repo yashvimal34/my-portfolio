@@ -51,6 +51,12 @@ export const About = () => {
                             When I'm not coding, you'll find me exploring the latest tech trends, contributing to open-source projects, or brainstorming innovative solutions to everyday challenges.
                         </p>
                     </div>
+
+                    <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
+                        <p className="text-lg font-medium italic text-foregroun">
+                            "My mission is to create digital experiences that are not just functional, but truly delightful - product that users love to use and developers love to maintain."
+                        </p>
+                    </div>
                 </div>
             </div>
             </div>
